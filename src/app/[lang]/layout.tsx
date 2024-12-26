@@ -4,7 +4,7 @@ import { getTranslations, type TranslationFunction } from '@/i18n'
 
 interface LayoutProps {
   children: React.ReactNode
-  params: Promise<any> | undefined
+  params: Promise<{ lang: string }> | undefined
 }
 
 export async function generateMetadata({ params }: LayoutProps): Promise<Metadata> {
