@@ -136,7 +136,6 @@ export default function Converter({ locale }: ConverterProps) {
           <DraggableFileList
             files={files}
             onFilesReorder={handleFilesReorder}
-            locale={locale}
           />
 
           <div className="mt-6 flex justify-between">

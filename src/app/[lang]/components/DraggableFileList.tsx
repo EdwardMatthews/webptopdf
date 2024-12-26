@@ -33,7 +33,6 @@ interface FileWithStatus {
 interface DraggableFileListProps {
   files: FileWithStatus[]
   onFilesReorder: (files: FileWithStatus[]) => void
-  locale: Locale
 }
 
 interface SortableItemProps {
@@ -81,9 +80,7 @@ function SortableItem({ file }: SortableItemProps) {
   )
 }
 
-export default function DraggableFileList({ files, onFilesReorder, locale }: DraggableFileListProps): ReactElement {
-  const t = useTranslations(locale)
-
+export default function DraggableFileList({ files, onFilesReorder }: DraggableFileListProps): ReactElement {
   const sensors = useSensors(
     useSensor(PointerSensor),
     useSensor(KeyboardSensor, {
