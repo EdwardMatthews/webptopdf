@@ -1,4 +1,3 @@
-import { getTranslations, type TranslationFunction } from '@/i18n'
 import Header from './[lang]/components/Header'
 import Hero from './[lang]/components/Hero'
 import Converter from './[lang]/components/Converter'

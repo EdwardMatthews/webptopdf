@@ -62,6 +62,14 @@ type TranslationValue = string | {
   [key: string]: TranslationValue | TranslationValue[] | undefined;
 };
 
+// 定义数组项的类型
+type TranslationItem = {
+  title: string;
+  description: string;
+  question?: string;
+  answer?: string;
+};
+
 export async function getTranslations(locale: Locale) {
   if (!SUPPORTED_LOCALES.includes(locale)) {
     throw new Error(`Unsupported locale: ${locale}`);
@@ -84,6 +92,6 @@ export async function getTranslations(locale: Locale) {
 // 修改导出的类型
 export type TranslationFunction = {
   (key: string): string;
-  (key: string, options: { returnObjects: true }): Array<any>;
+  (key: string, options: { returnObjects: true }): Array<TranslationItem>;
   (key: string, options?: Record<string, unknown>): TranslationValue;
 };

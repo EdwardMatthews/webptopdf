@@ -9,7 +9,7 @@ export function useTranslations(locale: Locale) {
     // 始终返回临时翻译函数作为初始状态
     const tempTranslate = ((key: string, options?: Record<string, unknown>) => {
       if (options?.returnObjects) {
-        return [] as any;
+        return [] as Array<Record<string, string>>;
       }
       return key;
     }) as TranslationFunction;
