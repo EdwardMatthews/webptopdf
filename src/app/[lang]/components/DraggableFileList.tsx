@@ -38,10 +38,9 @@ interface DraggableFileListProps {
 
 interface SortableItemProps {
   file: FileWithStatus
-  t: ReturnType<typeof useTranslations>
 }
 
-function SortableItem({ file, t }: SortableItemProps) {
+function SortableItem({ file }: SortableItemProps) {
   const {
     attributes,
     listeners,
@@ -114,7 +113,7 @@ export default function DraggableFileList({ files, onFilesReorder, locale }: Dra
       >
         <div className="mt-6 space-y-4">
           {files.map(file => (
-            <SortableItem key={file.id} file={file} t={t} />
+            <SortableItem key={file.id} file={file} />
           ))}
         </div>
       </SortableContext>
