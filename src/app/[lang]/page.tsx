@@ -8,12 +8,12 @@ import FAQ from './components/FAQ'
 import Footer from './components/Footer'
 
 interface PageProps {
-  params: { lang: string }
+  params: Promise<{ lang: string }> | undefined
 }
 
 export default async function Page({ params }: PageProps) {
-  const { lang } = await params
-  const locale = lang as Locale
+  const resolvedParams = await params
+  const locale = resolvedParams?.lang as Locale
   if (!locale) {
     throw new Error('Locale is required')
   }
