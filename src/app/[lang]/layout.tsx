@@ -19,6 +19,13 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
   return {
     title: t('meta.title') as string,
     description: t('meta.description') as string,
+    alternates: {
+      canonical: `https://webptopdf.pro/${locale}`,
+      languages: {
+        'en': 'https://webptopdf.pro',
+        'zh': 'https://webptopdf.pro/zh'
+      }
+    }
   }
 }
 

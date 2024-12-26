@@ -4,6 +4,7 @@ import type { Locale } from '@/types/json';
 let i18nInstance: ReturnType<typeof createInstance> | null = null;
 
 export const SUPPORTED_LOCALES: Locale[] = ['en', 'zh'];
+export const SUPPORTED_LOCALES_NOEN: Locale[] = ['zh'];
 export const DEFAULT_LOCALE: Locale = 'en';
 
 export const initI18next = async (locale: Locale) => {

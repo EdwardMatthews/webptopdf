@@ -1,12 +1,20 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import type { Metadata } from 'next'
+import { getTranslations, type TranslationFunction } from '@/i18n'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'WebP to PDF Converter',
-  description: 'Convert WebP images to PDF files easily',
+export async function generateMetadata(): Promise<Metadata> {
+  const t: TranslationFunction = await getTranslations("en")
+
+  return {
+    title: t('meta.title') as string,
+    description: t('meta.description') as string,
+    alternates: {
+      canonical: 'https://webptopdf.pro'
+    }
+  }
 }
 
 export default function RootLayout({

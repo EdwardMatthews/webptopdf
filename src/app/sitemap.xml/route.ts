@@ -1,19 +1,19 @@
-import { SUPPORTED_LOCALES } from '@/i18n'
+import { SUPPORTED_LOCALES_NOEN } from '@/i18n'
 import type { Locale } from '@/types/json'
 
 export async function GET() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://webp2pdf.vercel.app'
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://webptopdf.pro'
 
   // 生成 sitemap XML
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- 根路径 -->
   <url>
-    <loc>${baseUrl}</loc>
+    <loc>${baseUrl}/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  ${SUPPORTED_LOCALES.map((locale: Locale) => `
+  ${SUPPORTED_LOCALES_NOEN.map((locale: Locale) => `
   <!-- ${locale} 语言版本 -->
   <url>
     <loc>${baseUrl}/${locale}</loc>

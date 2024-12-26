@@ -31,12 +31,20 @@ export default function LanguageSelector({ currentLocale }: { currentLocale: Loc
 
     // 构建新路径
     const segments = pathname.split('/')
-    if (SUPPORTED_LOCALES.includes(segments[1] as Locale)) {
-      segments[1] = newLocale
+    if (newLocale === 'en') {
+      // 如果切换到英文，移除语言代码部分
+      if (SUPPORTED_LOCALES.includes(segments[1] as Locale)) {
+        segments.splice(1, 1)
+      }
     } else {
-      segments.splice(1, 0, newLocale)
+      // 对于其他语言
+      if (SUPPORTED_LOCALES.includes(segments[1] as Locale)) {
+        segments[1] = newLocale
+      } else {
+        segments.splice(1, 0, newLocale)
+      }
     }
-    const newPath = segments.join('/')
+    const newPath = segments.join('/') || '/'
 
     // 导航到新路径
     router.push(newPath)

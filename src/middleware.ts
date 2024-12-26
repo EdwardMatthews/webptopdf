@@ -44,21 +44,38 @@ export function middleware(request: NextRequest) {
     return;
   }
 
-  // 如果路径已经包含语言代码，不做任何处理
-  if (SUPPORTED_LOCALES.some(locale => pathname.startsWith(`/${locale}`))) {
+  // 如果路径是 /en，返回 404
+  if (pathname === '/en' || pathname.startsWith('/en/')) {
+    return new NextResponse(null, { status: 404 })
+  }
+
+  // 获取路径中的语言代码
+  const pathnameLocale = pathname.split('/')[1]
+
+  // 检查语言代码是否有效（除了 en）
+  if (pathnameLocale && !SUPPORTED_LOCALES.includes(pathnameLocale as Locale)) {
+    return new NextResponse(null, { status: 404 })
+  }
+
+  // 如果路径已经包含其他语言代码，不做任何处理
+  if (SUPPORTED_LOCALES.some(locale => locale !== 'en' && pathname.startsWith(`/${locale}`))) {
     return
   }
 
   // 获取合适的语言
   const locale = getLocale(request)
 
-  // 构建新的 URL
-  const newUrl = new URL(`/${locale}${pathname}`, request.url)
-  
-  // 保持查询参数
-  newUrl.search = request.nextUrl.search
+  // 如果是英文且不在根路径，重定向到根路径
+  if (locale === 'en') {
+    const newUrl = new URL(pathname, request.url)
+    newUrl.pathname = pathname
+    newUrl.search = request.nextUrl.search
+    return NextResponse.redirect(newUrl)
+  }
 
-  // 重定向到带有语言代码的 URL
+  // 对于其他语言，添加语言代码
+  const newUrl = new URL(`/${locale}${pathname}`, request.url)
+  newUrl.search = request.nextUrl.search
   return NextResponse.redirect(newUrl)
 }
 
