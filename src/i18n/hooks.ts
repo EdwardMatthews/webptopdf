@@ -1,12 +1,21 @@
-import { useEffect, useState } from 'react'
+'use client'
+
+import { useState, useEffect } from 'react'
+import { getTranslations, type TranslationFunction } from '@/i18n'
 import type { Locale } from '@/types/json'
-import { getTranslations, type TranslationFunction } from '.'
 
 export function useTranslations(locale: Locale) {
-  const [t, setT] = useState<TranslationFunction>(() => 
-    // 返回一个临时翻译函数，在真正的翻译加载完成前使用
-    (key: string) => key
-  )
+  const [t, setT] = useState<TranslationFunction>(() => {
+    // 始终返回临时翻译函数作为初始状态
+    const tempTranslate = ((key: string, options?: Record<string, unknown>) => {
+      if (options?.returnObjects) {
+        return [] as any;
+      }
+      return key;
+    }) as TranslationFunction;
+    
+    return tempTranslate;
+  });
 
   useEffect(() => {
     let mounted = true

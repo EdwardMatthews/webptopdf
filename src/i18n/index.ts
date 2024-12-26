@@ -45,6 +45,23 @@ export const initI18next = async (locale: Locale) => {
   return i18nInstance;
 };
 
+// 定义翻译值的类型
+type TranslationValue = string | {
+  title?: string;
+  description?: string;
+  items?: Array<{
+    title: string;
+    description: string;
+  }>;
+  steps?: Array<{
+    title: string;
+    description: string;
+  }>;
+  question?: string;
+  answer?: string;
+  [key: string]: TranslationValue | TranslationValue[] | undefined;
+};
+
 export async function getTranslations(locale: Locale) {
   if (!SUPPORTED_LOCALES.includes(locale)) {
     throw new Error(`Unsupported locale: ${locale}`);
@@ -53,14 +70,20 @@ export async function getTranslations(locale: Locale) {
   try {
     const instance = await initI18next(locale);
     
-    return function translate(key: string, options?: Record<string, unknown>): string | any[] {
-      const translated = instance.t(key, { ...options, lng: locale });
-      return translated;
-    };
+    const translate = ((key: string, options?: Record<string, unknown>) => {
+      return instance.t(key, { ...options, lng: locale });
+    }) as TranslationFunction;
+    
+    return translate;
   } catch (error) {
     console.error(`Failed to initialize translations for locale: ${locale}`, error);
     throw error;
   }
 }
 
-export type TranslationFunction = (key: string, options?: Record<string, unknown>) => string | any[];
+// 修改导出的类型
+export type TranslationFunction = {
+  (key: string): string;
+  (key: string, options: { returnObjects: true }): Array<any>;
+  (key: string, options?: Record<string, unknown>): TranslationValue;
+};

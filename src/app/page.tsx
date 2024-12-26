@@ -12,8 +12,6 @@ import { Locale } from '@/types/json'
 const DEFAULT_LOCALE: Locale = 'en'
 
 export default async function RootPage() {
-  const t: TranslationFunction = await getTranslations(DEFAULT_LOCALE)
-
   return (
     <div className="flex flex-col items-center min-h-screen">
       <LanguageDetector />

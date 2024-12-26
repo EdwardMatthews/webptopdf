@@ -36,8 +36,6 @@ export default async function Layout({ children, params }: LayoutProps) {
     throw new Error('Locale is required')
   }
 
-  const t: TranslationFunction = await getTranslations(locale)
-
   return (
     <div className="flex flex-col min-h-screen">
       {children}

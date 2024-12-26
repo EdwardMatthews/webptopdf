@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import type { PageSizeOption, PageSizeConfig } from '@/types/converter'
 import { useTranslations } from '@/i18n/hooks'
 import { Locale } from '@/types/json'
