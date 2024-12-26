@@ -4,12 +4,12 @@ import { getTranslations, type TranslationFunction } from '@/i18n'
 
 interface LayoutProps {
   children: React.ReactNode
-  params: Promise<{ lang: string }> | { lang: string }
+  params: Promise<any> | undefined
 }
 
 export async function generateMetadata({ params }: LayoutProps): Promise<Metadata> {
-  const { lang } = await params
-  const locale = lang as Locale
+  const resolvedParams = await params
+  const locale = resolvedParams?.lang as Locale
   if (!locale) {
     throw new Error('Locale is required')
   }
@@ -30,8 +30,8 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
 }
 
 export default async function Layout({ children, params }: LayoutProps) {
-  const { lang } = await params
-  const locale = lang as Locale
+  const resolvedParams = await params
+  const locale = resolvedParams?.lang as Locale
   if (!locale) {
     throw new Error('Locale is required')
   }
