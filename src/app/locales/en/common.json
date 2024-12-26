@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "title": "WebP to PDF Converter | Online WebP Image to PDF Tool | No Compression & Free",
+    "description": "Upload your WebP images and get a professional-looking PDF file in seconds! Our fast and secure webp to pdf converter ensures high-quality output without any watermark or copyright restrictions. Perfect for printing, sharing, or displaying online."
+  },
+  "header": {
+    "title": "Webp to PDF",
+    "subtitle": "Convert Webp images to PDF"
+  },
+  "page_size": {
+    "title": "Choose Page Size",
+    "original": {
+      "title": "Original Size",
+      "description": "Keep the original dimensions of your images"
+    },
+    "a4": {
+      "title": "A4 Page",
+      "description": "Place images on standard A4 pages"
+    },
+    "a4_fit": {
+      "title": "A4 Fit",
+      "description": "Scale images to fit within A4 pages"
+    }
+  },
+  "converter": {
+    "dropzone": {
+      "title": "Drop your Webp files here",
+      "subtitle": "or click to select files",
+      "hint": "Maximum 10 files, 10MB each"
+    },
+    "button": {
+      "convert": "Convert to PDF",
+      "converting": "Converting...",
+      "download": "Download PDF",
+      "newFiles": "Convert New Files"
+    },
+    "files": {
+      "title": "Selected files"
+    },
+    "status": {
+      "completed": "Conversion completed"
+    }
+  },
+  "features": {
+    "title": "Features",
+    "items": [
+      {
+        "title": "High-Quality PDF Output",
+        "description": "Our WebP to PDF converter ensures that your images are converted without compression, maintaining their original quality."
+      },
+      {
+        "title": "Fast Conversion Experience",
+        "description": "Get your PDF file in a matter of seconds! Our fast webp to pdf conversion service saves you time and effort."
+      },
+      {
+        "title": "Multiple Image Upload Support",
+        "description": "Upload and convert multiple WebP images with our webp to pdf converter at once. The final PDF file will contain all images in the order you specified."
+      },
+      {
+        "title": "Adjustable Display Order",
+        "description": "Before converting, adjust the display order of your images to create a customized PDF layout that suits your needs."
+      },
+      {
+        "title": "Three Size Options for PDF Output",
+        "description": "When using webp to pdf converter, choose from three size options (Original, A4 Spread, A4 Adaptive) to ensure the perfect fit for your PDF file."
+      },
+      {
+        "title": "No Watermark or Copyright Restrictions",
+        "description": "Our webp to pdf service is completely free and does not impose any watermark or copyright restrictions on your converted PDF files."
+      },
+      {
+        "title": "Absolute Security Guarantee",
+        "description": "Our webp to pdf converter does not store any user-uploaded content or personal data, ensuring absolute security and peace of mind for our users."
+      },
+      {
+        "title": "User-Friendly Interface",
+        "description": "Our website features a simple and intuitive interface that makes it easy to use our WebP to PDF converter service."
+      },
+      {
+        "title": "Completely Free",
+        "description": "All features of our webp to pdf converter are completely free to use, no additional costs or hidden fees."
+      }
+    ]
+  },
+  "howToUse": {
+    "title": "How to Use",
+    "steps": [
+      {
+        "title": "Easy Image Uploading",
+        "description": "Drop your Webp files or click to select, our webp to pdf converter supports bulk uploads, making it easy to convert all your images at once."
+      },
+      {
+        "title": "Select the Perfect PDF Size",
+        "description": "Pick from three size options - Original, A4 Adaptive, or A4 Spread - to ensure your final PDF file fits perfectly for printing or display."
+      },
+      {
+        "title": "Rearrange Images with Ease",
+        "description": "Drag and drop the images in the list to adjust their order before converting them into a single PDF file."
+      },
+      {
+        "title": "Fast Conversion and Download",
+        "description": "Click the 'Convert' button to initiate the conversion process. Once complete, download button will be shown for you to download your PDF file."
+      },
+      {
+        "title": "Download Your PDF",
+        "description": "Once the conversion is complete, click the 'Download' button to get your high-quality PDF file."
+      },
+      {
+        "title": "Share or Print Your PDF",
+        "description": "You can now share your PDF file with others, print it, or use it for any purpose without any restrictions."
+      }
+    ]
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "What is WebP to PDF Converter and what does it do?",
+        "answer": "WebP to PDF Converter is an online service that allows users to convert WebP images into high-quality PDF files. Our webp to pdf converter offers three size options (Original, A4 Spread, A4 Adaptive) and ensures no compression or watermark."
+      },
+      {
+        "question": "How do I use the WebP to PDF converter?",
+        "answer": "Simply upload your WebP images, select a PDF size option, and adjust the image order if needed. Click 'Convert' and out webp to pdf converter will offer you a high-quality PDF file in seconds."
+      },
+      {
+        "question": "Is the WebP to PDF converter free to use?",
+        "answer": "Yes, our webp to pdf converter is completely free! No watermark, no compression, and no costs involved."
+      },
+      {
+        "question": "How long does the WebP to PDF conversion process take?",
+        "answer": "Our WebP to PDF converter is designed for speed! You can expect your PDF file to be ready in a very short period of time, saving you valuable minutes or even hours."
+      },
+      {
+        "question": "What is the maximum file size for the WebP to PDF converter?",
+        "answer": "The maximum file size for the WebP to PDF converter is 10MB per file. This allows you to convert large images without any issues."
+      },
+      {
+        "question": "Can I convert WebP to PDF without any watermark or compression?",
+        "answer": "Yes, our webp to pdf converter ensures that your PDF files are free from any watermarks or compression. You can use the PDF files for any purpose without any restrictions."
+      },
+      {
+        "question": "What is the purpose of converting WebP to PDF?",
+        "answer": "Converting WebP to PDF is a great way to preserve the quality of your images while making them easier to share and print. PDF format is widely supported and perfect for document sharing and printing."
+      },
+      {
+        "question": "How does the WebP to PDF converter work?",
+        "answer": "Our webp to pdf converter uses advanced algorithms to convert your WebP images into high-quality PDF files. The process is fast and secure, ensuring that your images are converted accurately and efficiently."
+      },
+      {
+        "question": "What is the difference between the different PDF size options?",
+        "answer": "The different PDF size options allow you to choose the best fit for your needs. Original size keeps your images at their original dimensions, A4 Spread places images on standard A4 pages, and A4 Adaptive scales images to fit within A4 pages."
+      },
+      {
+        "question": "Can I adjust the order of the images in the PDF?",
+        "answer": "Yes, our webp to pdf converter allows you to adjust the order of the images in the PDF. You can drag and drop the images to change their order."
+      },
+      {
+        "question": "Is there a limit to the number of files I can convert?",
+        "answer": "No, there is no limit to the number of files you can convert. You can upload as many WebP images as you need, and our webp to pdf converter will handle them all."
+      },
+      {
+        "question": "Is my uploaded content and personal data safe with webP to PDF converter?",
+        "answer": "Absolutely! We do not store any user-uploaded content or personal data. Your security is our top priority."
+      },
+      {
+        "question": "Can I convert WebP to PDF on mobile devices?",
+        "answer": "Yes, our webp to pdf converter is fully responsive and works great on mobile devices. You can easily upload your WebP images and convert them to PDF on your phone or tablet."
+      }
+    ]
+  },
+  "footer": {
+    "about": {
+      "title": "About Webp2PDF",
+      "description": "Webp2PDF is a free online tool that helps you convert Webp images to PDF format. Simple, fast, and secure, with no need to upload your files to a server."
+    },
+    "links": {
+      "title": "Userful Links",
+      "iframeGenerator": "Iframe Generator",
+      "ddsToPng": "DDS To PNG"
+    },
+    "contact": {
+      "title": "Contact Info",
+      "email": "support@webp2pdf.com",
+      "address": "San Francisco, CA"
+    },
+    "copyright": "All rights reserved."
+  }
+} 

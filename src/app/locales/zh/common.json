@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "title": "WebP转PDF转换器 | 在线WebP图片转PDF工具 | 无压缩免费",
+    "description": "上传您的WebP图片，几秒钟内即可获得专业的PDF文件！我们快速安全的webp转pdf转换器确保高质量输出，无水印无版权限制。完美适用于打印、分享或在线展示。"
+  },
+  "header": {
+    "title": "WebP转PDF",
+    "subtitle": "将WebP图片转换为PDF"
+  },
+  "page_size": {
+    "title": "选择页面尺寸",
+    "original": {
+      "title": "原始尺寸",
+      "description": "保持图片原始尺寸"
+    },
+    "a4": {
+      "title": "A4页面",
+      "description": "将图片放置在标准A4页面上"
+    },
+    "a4_fit": {
+      "title": "A4适应",
+      "description": "缩放图片以适应A4页面"
+    }
+  },
+  "converter": {
+    "dropzone": {
+      "title": "将WebP文件拖放到这里",
+      "subtitle": "或点击选择文件",
+      "hint": "最多10个文件，每个最大10MB"
+    },
+    "button": {
+      "convert": "转换为PDF",
+      "converting": "转换中...",
+      "download": "下载PDF",
+      "newFiles": "转换新文件"
+    },
+    "files": {
+      "title": "已选择的文件"
+    },
+    "status": {
+      "completed": "转换完成"
+    }
+  },
+  "features": {
+    "title": "功能特点",
+    "items": [
+      {
+        "title": "高质量PDF输出",
+        "description": "我们的WebP转PDF转换器确保在不压缩的情况下转换您的图片，保持原始质量。"
+      },
+      {
+        "title": "快速转换体验",
+        "description": "几秒钟内即可获得PDF文件！我们快速的webp转pdf转换服务为您节省时间和精力。"
+      },
+      {
+        "title": "支持多图片上传",
+        "description": "使用我们的webp转pdf转换器一次性上传并转换多个WebP图片。最终的PDF文件将按照您指定的顺序包含所有图片。"
+      },
+      {
+        "title": "可调整显示顺序",
+        "description": "在转换之前，调整图片的显示顺序，创建符合您需求的自定义PDF布局。"
+      },
+      {
+        "title": "三种PDF输出尺寸选项",
+        "description": "使用webp转pdf转换器时，可以从三种尺寸选项（原始、A4拉伸、A4适应）中选择，确保PDF文件的完美适配。"
+      },
+      {
+        "title": "无水印无版权限制",
+        "description": "我们的webp转pdf服务完全免费，不会在转换后的PDF文件上添加任何水印或版权限制。"
+      },
+      {
+        "title": "绝对安全保证",
+        "description": "我们的webp转pdf转换器不会存储任何用户上传的内容或个人数据，确保用户的绝对安全和安心。"
+      },
+      {
+        "title": "用户友好界面",
+        "description": "我们的网站具有简单直观的界面，使用我们的WebP转PDF转换服务变得轻而易举。"
+      },
+      {
+        "title": "完全免费",
+        "description": "我们的webp转pdf转换器的所有功能都完全免费使用，没有额外费用或隐藏收费。"
+      }
+    ]
+  },
+  "howToUse": {
+    "title": "使用方法",
+    "steps": [
+      {
+        "title": "轻松上传图片",
+        "description": "拖放您的WebP文件或点击选择，我们的webp转pdf转换器支持批量上传，轻松一次性转换所有图片。"
+      },
+      {
+        "title": "选择完美的PDF尺寸",
+        "description": "从三种尺寸选项中选择 - 原始、A4适应或A4拉伸 - 确保最终的PDF文件完美适合打印或显示。"
+      },
+      {
+        "title": "轻松重排图片",
+        "description": "在列表中拖放图片，在将它们转换为单个PDF文件之前调整它们的顺序。"
+      },
+      {
+        "title": "快速转换和下载",
+        "description": "点击“转换”按钮开始转换过程。完成后，将显示下载按钮供您下载PDF文件。"
+      },
+      {
+        "title": "下载您的PDF",
+        "description": "转换完成后，点击“下载”按钮获取您的高质量PDF文件。"
+      },
+      {
+        "title": "分享或打印PDF",
+        "description": "现在您可以与他人分享您的PDF文件，打印它，或在没有任何限制的情况下将其用于任何目的。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "常见问题",
+    "items": [
+      {
+        "question": "什么是WebP转PDF转换器，它有什么用？",
+        "answer": "WebP转PDF转换器是一个在线服务，允许用户将WebP图片转换为高质量的PDF文件。我们的webp转pdf转换器提供三种尺寸选项（原始、A4拉伸、A4适应），并确保无压缩和无水印。"
+      },
+      {
+        "question": "如何使用WebP转PDF转换器？",
+        "answer": "只需上传您的WebP图片，选择PDF尺寸选项，并根据需要调整图片顺序。点击“转换”按钮，我们的webp转pdf转换器将在几秒钟内为您提供高质量的PDF文件。"
+      },
+      {
+        "question": "WebP转PDF转换器是免费使用的吗？",
+        "answer": "是的，我们的webp转pdf转换器完全免费！无水印，无压缩，无任何费用。"
+      },
+      {
+        "question": "WebP转PDF转换过程需要多长时间？",
+        "answer": "我们的WebP转PDF转换器专为速度而设计！您可以期待在很短的时间内获得PDF文件，为您节省宝贵的时间。"
+      },
+      {
+        "question": "WebP转PDF转换器的最大文件大小是多少？",
+        "answer": "WebP转PDF转换器的最大文件大小为每个文件10MB。这允许您毫无问题地转换大型图片。"
+      },
+      {
+        "question": "我可以在不添加水印或压缩的情况下将WebP转换为PDF吗？",
+        "answer": "是的，我们的webp转pdf转换器确保您的PDF文件没有任何水印或压缩。您可以在没有任何限制的情况下将PDF文件用于任何目的。"
+      },
+      {
+        "question": "将WebP转换为PDF的目的是什么？",
+        "answer": "将WebP转换为PDF是在保持图片质量的同时使其更易于分享和打印的好方法。PDF格式被广泛支持，非常适合文档共享和打印。"
+      },
+      {
+        "question": "WebP转PDF转换器是如何工作的？",
+        "answer": "我们的webp转pdf转换器使用先进的算法将您的WebP图片转换为高质量的PDF文件。这个过程快速且安全，确保您的图片准确高效地转换。"
+      },
+      {
+        "question": "不同的PDF尺寸选项有什么区别？",
+        "answer": "不同的PDF尺寸选项让您可以选择最适合您需求的方式。原始尺寸保持图片的原始尺寸，A4拉伸将图片放置在标准A4页面上，A4适应将图片缩放以适应A4页面。"
+      },
+      {
+        "question": "我可以调整PDF中图片的顺序吗？",
+        "answer": "是的，我们的webp转pdf转换器允许您调整PDF中图片的顺序。您可以拖放图片来改变它们的顺序。"
+      },
+      {
+        "question": "我可以转换的文件数量有限制吗？",
+        "answer": "不，您可以转换的文件数量没有限制。您可以上传任意数量的WebP图片，我们的webp转pdf转换器都能处理。"
+      },
+      {
+        "question": "我上传的内容和个人数据在WebP转PDF转换器中是否安全？",
+        "answer": "绝对安全！我们不存储任何用户上传的内容或个人数据。您的安全是我们的首要任务。"
+      },
+      {
+        "question": "我可以在移动设备上将WebP转换为PDF吗？",
+        "answer": "是的，我们的webp转pdf转换器完全响应式，在移动设备上运行良好。您可以在手机或平板电脑上轻松上传WebP图片并将其转换为PDF。"
+      }
+    ]
+  },
+  "footer": {
+    "about": {
+      "title": "关于WebP2PDF",
+      "description": "WebP2PDF是一个免费的在线工具，可以帮助您将WebP图片转换为PDF格式。简单、快速、安全，无需将文件上传到服务器。"
+    },
+    "links": {
+      "title": "友情链接",
+      "iframeGenerator": "Iframe Generator",
+      "ddsToPng": "DDS To PNG"
+    },
+    "contact": {
+      "title": "联系方式",
+      "email": "support@webp2pdf.com",
+      "address": "旧金山，加利福尼亚"
+    },
+    "copyright": "版权所有。"
+  }
+} 

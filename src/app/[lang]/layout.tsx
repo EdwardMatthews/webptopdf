@@ -1,0 +1,39 @@
+import type { Metadata } from 'next'
+import { Locale } from '@/types/json'
+import { getTranslations, type TranslationFunction } from '@/i18n'
+
+interface LayoutProps {
+  children: React.ReactNode
+  params: { lang: string }
+}
+
+export async function generateMetadata({ params }: LayoutProps): Promise<Metadata> {
+  const { lang } = await params
+  const locale = lang as Locale
+  if (!locale) {
+    throw new Error('Locale is required')
+  }
+
+  const t: TranslationFunction = await getTranslations(locale)
+
+  return {
+    title: t('meta.title') as string,
+    description: t('meta.description') as string,
+  }
+}
+
+export default async function Layout({ children, params }: LayoutProps) {
+  const { lang } = await params
+  const locale = lang as Locale
+  if (!locale) {
+    throw new Error('Locale is required')
+  }
+
+  const t: TranslationFunction = await getTranslations(locale)
+
+  return (
+    <div className="flex flex-col min-h-screen">
+      {children}
+    </div>
+  )
+} 
