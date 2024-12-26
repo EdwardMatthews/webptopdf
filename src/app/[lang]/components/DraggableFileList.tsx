@@ -18,8 +18,6 @@ import {
   verticalListSortingStrategy
 } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities'
-import { useTranslations } from '@/i18n/hooks'
-import { Locale } from '@/types/json'
 import { formatFileSize } from '../../utils/format'
 
 interface FileWithStatus {
