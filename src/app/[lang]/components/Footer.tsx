@@ -50,12 +50,12 @@ export default async function Footer({ locale }: FooterProps) {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link href="https://www.iframegenerator.pro" className="text-gray-600 hover:text-gray-800 transition-colors">
+                <Link href="https://www.iframegenerator.pro/" className="text-gray-600 hover:text-gray-800 transition-colors">
                   {t('footer.links.iframeGenerator')}
                 </Link>
               </li>
               <li>
-                <Link href="https://www.ddstopng.pro" className="text-gray-600 hover:text-gray-800 transition-colors">
+                <Link href="https://www.ddstopng.pro/" className="text-gray-600 hover:text-gray-800 transition-colors">
                   {t('footer.links.ddsToPng')}
                 </Link>
               </li>
