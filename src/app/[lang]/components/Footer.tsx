@@ -69,7 +69,6 @@ export default async function Footer({ locale }: FooterProps) {
             </h3>
             <ul className="space-y-2 text-gray-600">
               <li>{t('footer.contact.email')}</li>
-              <li>{t('footer.contact.address')}</li>
             </ul>
           </div>
         </div>
