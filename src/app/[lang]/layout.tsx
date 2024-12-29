@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
     alternates: {
       canonical: `https://webptopdf.pro/${locale}`,
       languages: {
-        'en': 'https://webptopdf.pro',
+        'en': 'https://webptopdf.pro/',
         'zh': 'https://webptopdf.pro/zh'
       }
     }

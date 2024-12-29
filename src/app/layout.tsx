@@ -12,7 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title: t('meta.title') as string,
     description: t('meta.description') as string,
     alternates: {
-      canonical: 'https://webptopdf.pro'
+      canonical: 'https://webptopdf.pro/'
     }
   }
 }
