@@ -59,6 +59,26 @@ export default async function Footer({ locale }: FooterProps) {
                   {t('footer.links.ddsToPng')}
                 </Link>
               </li>
+              <li>
+                <Link href="https://demonnamegenerator.pro/" className="text-gray-600 hover:text-gray-800 transition-colors">
+                  {t('footer.links.demonNameGenerator')}
+                </Link>
+              </li>
+              <li>
+                <Link href="https://kingdomnamegenerator.pro/" className="text-gray-600 hover:text-gray-800 transition-colors">
+                  {t('footer.links.kingdomNameGenerator')}
+                </Link>
+              </li>
+              <li>
+                <Link href="https://harrypotternamegenerator.pro/" className="text-gray-600 hover:text-gray-800 transition-colors">
+                  {t('footer.links.harryPotterNameGenerator')}
+                </Link>
+              </li>
+              <li>
+                <Link href="https://wutangnamegenerator.pro/" className="text-gray-600 hover:text-gray-800 transition-colors">
+                  {t('footer.links.wuTangNameGenerator')}
+                </Link>
+              </li>
             </ul>
           </div>
 

@@ -176,7 +176,11 @@
     "links": {
       "title": "Userful Links",
       "iframeGenerator": "Iframe Generator",
-      "ddsToPng": "DDS To PNG"
+      "ddsToPng": "DDS To PNG",
+      "demonNameGenerator": "Demon Name Generator",
+      "kingdomNameGenerator": "Kingdom Name Generator",
+      "harryPotterNameGenerator": "Harry Potter Name Generator",
+      "wuTangNameGenerator": "Wu Tang Name Generator"
     },
     "contact": {
       "title": "Contact Info",
