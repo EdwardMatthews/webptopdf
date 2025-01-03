@@ -13,10 +13,18 @@ export default function Header({ locale }: { locale: Locale }) {
       <header className="fixed top-0 left-0 right-0 z-50 w-full bg-gray-900 shadow-md">
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
-            <Link href={`/${locale}`} className="flex items-center space-x-2">
-              <Image src="/logo.svg" alt="Logo" width={32} height={32} className="w-8 h-8" />
-              <span className="text-xl font-semibold text-white">WebP2PDF</span>
-            </Link>
+            {locale === 'en' && (
+              <Link href="/" className="flex items-center space-x-2">
+                <Image src="/logo.svg" alt="Logo" width={32} height={32} className="w-8 h-8" />
+                <span className="text-xl font-semibold text-white">WebP2PDF</span>
+              </Link>
+            )}
+            {locale !== 'en' && (
+              <Link href={`/${locale}`} className="flex items-center space-x-2">
+                <Image src="/logo.svg" alt="Logo" width={32} height={32} className="w-8 h-8" />
+                <span className="text-xl font-semibold text-white">WebP2PDF</span>
+              </Link>
+            )}
             <LanguageSelector currentLocale={locale} />
           </div>
         </div>
