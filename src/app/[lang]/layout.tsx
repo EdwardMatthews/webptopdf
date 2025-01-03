@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Locale } from '@/types/json'
 import { getTranslations, type TranslationFunction } from '@/i18n'
+import GoogleAnalytics from '../components/GoogleAnalytics'
 
 interface LayoutProps {
   children: React.ReactNode
@@ -37,8 +38,11 @@ export default async function Layout({ children, params }: LayoutProps) {
   }
 
   return (
-    <div className="flex flex-col min-h-screen">
-      {children}
-    </div>
+    <>
+      <GoogleAnalytics />
+      <div className="flex flex-col min-h-screen">
+        {children}
+      </div>
+    </>
   )
 } 

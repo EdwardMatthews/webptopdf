@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import type { Metadata } from 'next'
 import { getTranslations, type TranslationFunction } from '@/i18n'
+import GoogleAnalytics from './components/GoogleAnalytics'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,7 +13,11 @@ export async function generateMetadata(): Promise<Metadata> {
     title: t('meta.title') as string,
     description: t('meta.description') as string,
     alternates: {
-      canonical: 'https://webptopdf.pro/'
+      canonical: 'https://webptopdf.pro/',
+      languages: {
+        'en': 'https://webptopdf.pro/',
+        'zh': 'https://webptopdf.pro/zh'
+      }
     }
   }
 }
@@ -24,6 +29,9 @@ export default function RootLayout({
 }) {
   return (
     <html>
+      <head>
+        <GoogleAnalytics />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )
