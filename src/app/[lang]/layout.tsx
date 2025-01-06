@@ -26,6 +26,9 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
         'en': 'https://webptopdf.pro/',
         'zh': 'https://webptopdf.pro/zh'
       }
+    },
+    icons: {
+      icon: '/favicon.ico',
     }
   }
 }
