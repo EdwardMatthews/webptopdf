@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { FaGithub, FaTwitter } from 'react-icons/fa'
+import { FaCalendar, FaGithub, FaTwitter } from 'react-icons/fa'
 import type { Locale } from '@/types/json'
 import { getTranslations, type TranslationFunction } from '@/i18n'
 
@@ -40,6 +40,14 @@ export default async function Footer({ locale }: FooterProps) {
               >
                 <FaTwitter className="w-6 h-6" />
               </a>
+              <a
+                href="https://cal.com/edward-umt5ht"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-gray-600 transition-colors"
+              >
+                <FaCalendar className="w-6 h-6" />
+              </a>
             </div>
           </div>
 
@@ -77,6 +85,11 @@ export default async function Footer({ locale }: FooterProps) {
               <li>
                 <Link href="https://wutangnamegenerator.pro/" className="text-gray-600 hover:text-gray-800 transition-colors">
                   {t('footer.links.wuTangNameGenerator')}
+                </Link>
+              </li>
+              <li>
+                <Link href="https://pdftomarkdown.pro/" className="text-gray-600 hover:text-gray-800 transition-colors">
+                  {t('footer.links.pdfToMarkdown')}
                 </Link>
               </li>
             </ul>

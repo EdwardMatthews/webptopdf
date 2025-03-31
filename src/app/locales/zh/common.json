@@ -180,7 +180,8 @@
       "demonNameGenerator": "Demon Name Generator",
       "kingdomNameGenerator": "Kingdom Name Generator",
       "harryPotterNameGenerator": "Harry Potter Name Generator",
-      "wuTangNameGenerator": "Wu Tang Name Generator"
+      "wuTangNameGenerator": "Wu Tang Name Generator",
+      "pdfToMarkdown": "PDF to Markdown"
     },
     "contact": {
       "title": "联系方式",
