@@ -44,6 +44,10 @@ export function middleware(request: NextRequest) {
     return;
   }
 
+  if (pathname === '/r') {
+    return;
+  }
+
   // 如果路径是 /en，返回 404
   if (pathname === '/en' || pathname.startsWith('/en/')) {
     return new NextResponse(null, { status: 404 })
