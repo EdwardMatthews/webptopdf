@@ -58,38 +58,13 @@ export default async function Footer({ locale }: FooterProps) {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link href="https://www.iframegenerator.pro/" className="text-gray-600 hover:text-gray-800 transition-colors">
-                  {t('footer.links.iframeGenerator')}
-                </Link>
-              </li>
-              <li>
                 <Link href="https://www.ddstopng.pro/" className="text-gray-600 hover:text-gray-800 transition-colors">
                   {t('footer.links.ddsToPng')}
                 </Link>
               </li>
               <li>
-                <Link href="https://demonnamegenerator.pro/" className="text-gray-600 hover:text-gray-800 transition-colors">
-                  {t('footer.links.demonNameGenerator')}
-                </Link>
-              </li>
-              <li>
-                <Link href="https://kingdomnamegenerator.pro/" className="text-gray-600 hover:text-gray-800 transition-colors">
-                  {t('footer.links.kingdomNameGenerator')}
-                </Link>
-              </li>
-              <li>
-                <Link href="https://harrypotternamegenerator.pro/" className="text-gray-600 hover:text-gray-800 transition-colors">
-                  {t('footer.links.harryPotterNameGenerator')}
-                </Link>
-              </li>
-              <li>
-                <Link href="https://wutangnamegenerator.pro/" className="text-gray-600 hover:text-gray-800 transition-colors">
-                  {t('footer.links.wuTangNameGenerator')}
-                </Link>
-              </li>
-              <li>
-                <Link href="https://pdftomarkdown.pro/" className="text-gray-600 hover:text-gray-800 transition-colors">
-                  {t('footer.links.pdfToMarkdown')}
+                <Link href="https://kimi-k2.ai/" className="text-gray-600 hover:text-gray-800 transition-colors">
+                  {t('footer.links.kimik2')}
                 </Link>
               </li>
             </ul>

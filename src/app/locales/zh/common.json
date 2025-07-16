@@ -175,13 +175,8 @@
     },
     "links": {
       "title": "友情链接",
-      "iframeGenerator": "Iframe Generator",
       "ddsToPng": "DDS To PNG",
-      "demonNameGenerator": "Demon Name Generator",
-      "kingdomNameGenerator": "Kingdom Name Generator",
-      "harryPotterNameGenerator": "Harry Potter Name Generator",
-      "wuTangNameGenerator": "Wu Tang Name Generator",
-      "pdfToMarkdown": "PDF to Markdown"
+      "kimik2": "Kimi K2"
     },
     "contact": {
       "title": "联系方式",

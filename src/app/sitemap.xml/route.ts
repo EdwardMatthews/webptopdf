@@ -20,11 +20,6 @@ export async function GET() {
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>`).join('')}
-  <url>
-    <loc>${baseUrl}/r</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 </urlset>`
 
   // 返回正确的 Content-Type
